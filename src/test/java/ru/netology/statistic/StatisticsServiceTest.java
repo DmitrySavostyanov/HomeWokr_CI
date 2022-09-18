@@ -16,12 +16,13 @@ public class StatisticsServiceTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     void findMaxTwo() {
         StatisticsService service = new StatisticsService();
 
         long[] incomesInBillions = {1, 6, 3, 7, 4, 0, 10, 8, 2, 7, 9};
-        long expected = 10;
+        long expected = 11;
 
         long actual = service.findMax(incomesInBillions);
 
